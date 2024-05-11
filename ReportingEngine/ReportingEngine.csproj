@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B2C1897-1A39-4EF7-A1E0-E15961E9EBBA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReportingEngine</RootNamespace>
+    <AssemblyName>ReportingEngine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>settings.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="POP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\POP\bin\Debug\POP.dll</HintPath>
+    </Reference>
+    <Reference Include="Pxmart, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\WorkSpace\Pxmart\Pxmart\bin\Debug\Pxmart.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormFileTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFileTrans.Designer.cs">
+      <DependentUpon>FormFileTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormImageTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImageTest.Designer.cs">
+      <DependentUpon>FormImageTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormImageTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImageTrans.Designer.cs">
+      <DependentUpon>FormImageTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormImg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImg.Designer.cs">
+      <DependentUpon>FormImg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLinkedServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLinkedServer.Designer.cs">
+      <DependentUpon>FormLinkedServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOption.Designer.cs">
+      <DependentUpon>FormOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Option\OptionArea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Option\OptionArea.Designer.cs">
+      <DependentUpon>OptionArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Option\OptionPrinter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Option\OptionPrinter.Designer.cs">
+      <DependentUpon>OptionPrinter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Option\OptionFormat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Option\OptionFormat.Designer.cs">
+      <DependentUpon>OptionFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Option\OptionPaper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Option\OptionPaper.Designer.cs">
+      <DependentUpon>OptionPaper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormFileTrans.resx">
+      <DependentUpon>FormFileTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImageTest.resx">
+      <DependentUpon>FormImageTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImageTrans.resx">
+      <DependentUpon>FormImageTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImg.resx">
+      <DependentUpon>FormImg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLinkedServer.resx">
+      <DependentUpon>FormLinkedServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOption.resx">
+      <DependentUpon>FormOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option\OptionArea.resx">
+      <DependentUpon>OptionArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option\OptionPrinter.resx">
+      <DependentUpon>OptionPrinter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option\OptionFormat.resx">
+      <DependentUpon>OptionFormat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Option\OptionPaper.resx">
+      <DependentUpon>OptionPaper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="settings.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
